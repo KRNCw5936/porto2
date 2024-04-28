@@ -258,24 +258,15 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
-.portfolio-card-container .card {
-  width: calc(33.33% - 40px); 
-  margin: 50px; 
+.portfolio-card {
+  width: calc(33.33% - 40px); /* Ubah lebar card sesuai kebutuhan, dan kurangi margin agar tidak overlap */
+  margin: 20px; /* Ubah margin agar card lebih rapat */
 }
 
-.portfolio-card-container .portfolio-img {
-  border-radius: 0;
-  width: 100%; 
-  height: auto; 
+.card-img-top {
+  max-width: 100%; /* Gambar tidak akan melebihi lebar kontainer card */
+  height: auto; /* Memastikan gambar tetap proporsional saat menyesuaikan lebar */
 }
-
-.card-img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
-  border-radius: 0 !important; 
-}
-
 
 /* CSS untuk Contact */
 .contact-info {
@@ -389,6 +380,8 @@ footer {
         </div>
     </div>
 
+    <!-- About -->
+
     <div id="about">
         <div class="card">
             <h2>ABOUT</h2>
@@ -407,105 +400,58 @@ footer {
                 <img src="./assets/images/PHP-logo.svg.png" class="card-img-top" alt="logo php">
                 <img src="./assets/images/Python-logo-notext.svg.png" class="card-img-top" alt="logo py">
                 <img src="./assets/images/1969px-Laravel.svg.png" class="card-img-top" alt="logo laravel">
-                <img src="./assets/images/pngwing.com.png" class="card-img-top" alt="logo DB">
-                
+                <img src="./assets/images/pngwing.com.png" class="card-img-top" alt="logo DB">   
             </div>
-
-            <!-- Bar Progres -->
-            <!-- <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 76%;" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-label"><i class="fab fa-php"></i> PHP 76%</span>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-label"><i class="fab fa-python"></i> Python 60%</span>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-label"><i class="fab fa-java"></i> Java 85%</span>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 77%;" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-label"><i class="fab fa-laravel"></i> Laravel 77%</span>
-                </div>
-            </div>
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
-                    <span class="progress-label"><i class="fab fa-db"></i> Database 78%</span>
-                </div>
-            </div> -->
             <!-- Tombol Download CV -->
             <a href="./assets/Putih dan Hitam Profesional Minimalis CV Resume Template-1.pdf" download class="btn btn-primary">Download CV</a>
         </div>
     </div>
 
+    <!-- Portofolio -->
+
     <div id="work">
       <span id="portfolio-heading">PORTOFOLIO</span>
       <div class="portfolio-card-container">
           
-          <div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="./assets/images/netbeans-project.jpg" class="card-img img-fluid" alt="">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h2 class="card-title">NetBeans Desktop</h2>
-                          <p class="card-text">Membuat Desktop Sederhana Menggunakan Apache NetBeans Yang Terhubung Dengan Database dan Bisa Disimpan ke SpreadSheeet</p>
-                          <a href="https://www.instagram.com/p/C5qlpJvSph4/?utm_source=ig_web_copy_link" class="btn btn-primary">Klik untuk melihat</a>
-                      </div>
-                  </div>
-              </div>
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/Simple Desktop Application Interface(5).png" class="card-img-top" alt="project1">
+          <div class="card-body">
+            <h5 class="card-title">TAMPILAN DESKTOP SEDERHANA</h5>
+            <p class="card-text">Membuat Desktop Sederhana Menggunakan Apache NetBeans Yang Terhubung Dengan Database dan Bisa Disimpan ke SpreadSheeet.</p>
+            <a href="https://www.instagram.com/p/C5qlpJvSph4/?utm_source=ig_web_copy_link" class="btn btn-primary">Klik Selengkapya</a>
           </div>
-          <div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="./assets/images/Desain tanpa judul(3).png" class="card-img img-fluid" alt="webstarmart">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h2 class="card-title">Website Starbhak Market</h2>
-                          <p class="card-text">Membuat Tampilan Website Penjualan Yang Memiliki Fungsi Dengan Baik.</p>
-                          <a href="https://github.com/KRNCw5936/Assesment_Web.git" class="btn btn-primary">Klik untuk melihat</a>
-                      </div>
-                  </div>
-              </div>
+        </div>
+      
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/starbhakmart2.jpg" class="card-img-top" alt="project2">
+          <div class="card-body">
+            <h5 class="card-title">WEBSITE STARBHAK MARKET</h5>
+            <p class="card-text">Membuat Tampilan Website Penjualan Yang Memiliki Fungsi Dengan Baik.</p>
+            <a href="https://github.com/KRNCw5936/Assesment_Web.git" class="btn btn-primary">Klik Selengkapya</a>
           </div>
-          <div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="./assets/images/Simple Desktop Application Interface(5).png" class="card-img img-fluid" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h2 class="card-title">CRUD Java</h2>
-                          <p class="card-text">Membuat CRUD Java Yang Berfungsi Dengan Baik Menggunakan Apache NetBeans.</p>
-                          <a href="https://www.instagram.com/p/C5sAP9ZyaLN/?utm_source=ig_web_copy_link" class="btn btn-primary">Klik untuk melihat</a>
-                      </div>
-                  </div>
-              </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/Simple Desktop Application Interface(5).png" class="card-img-top" alt="project3">
+          <div class="card-body">
+            <h5 class="card-title">CRUD JAVA</h5>
+            <p class="card-text">Membuat CRUD Java Yang Berfungsi Dengan Baik Menggunakan Apache NetBeans.</p>
+            <a href="https://www.instagram.com/p/C5sAP9ZyaLN/?utm_source=ig_web_copy_link" class="btn btn-primary">Klik Selengkapya</a>
           </div>
-          <div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                  <div class="col-md-4">
-                      <img src="./assets/images/AppStarMart1.jpg" class="card-img img-fluid" alt="appstarmart">
-                  </div>
-                  <div class="col-md-8">
-                      <div class="card-body">
-                          <h2 class="card-title">Aplikasi Starbhak Market</h2>
-                          <p class="card-text">Aplikasi Pemesanan Makanan Cepat Saji</p>
-                          <a href="https://github.com/KRNCw5936/Asses_Flutter.git" class="btn btn-primary">Klik untuk melihat</a>
-                      </div>
-                  </div>
-              </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/images/AppStarMart2.jpg" class="card-img-top" alt="project4">
+          <div class="card-body">
+            <h5 class="card-title">APLIKASI MOBILE STARBHAK MARKET</h5>
+            <p class="card-text">Aplikasi Pemesanan Makanan Cepat Saji.</p>
+            <a href="https://github.com/KRNCw5936/Asses_Flutter.git" class="btn btn-primary">Klik Selengkapya</a>
           </div>
+        </div>
       </div>
   </div>
   
-  
+  <!-- Contact -->
 
     <div id="contact">
       <div class="contact-info">
